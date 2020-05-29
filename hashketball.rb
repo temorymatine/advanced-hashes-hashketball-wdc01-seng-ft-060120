@@ -1,4 +1,4 @@
-# Write your code below game_hash
+require 'pry'
 def game_hash
   {
     home: {
@@ -150,9 +150,10 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(teams)
-  teams.collect {|spot, team|
+def team_names(team_info)
+  teams_info.collect {|spot, team|
     team[:team_name]
+    binding.pry
   }
 end
 
