@@ -151,8 +151,8 @@ def team_colors(teams_name)
 end
 
 
-def team_names(g,d)
-  g.collect{|spot,team|
+def team_names
+  game_hash.collect{|spot,team|
   team[:team_name]
   }
 end
