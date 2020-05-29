@@ -141,7 +141,9 @@ def show_size(players_name)
     players_name
     return player_info[:shoe]
   end
-  }}
+  }
+    
+  }
 end
 
   
