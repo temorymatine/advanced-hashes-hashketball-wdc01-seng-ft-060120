@@ -168,19 +168,19 @@ def player_numbers(teams_name)
   num
 end
 def player_stats(players_name)
-  stat = {}
-  game_hash.each {|spot, team|
-    team[:players].each {|ph|
-    if ph[:player_name] == players_name
-      ph.each {|selec, data|
-        if selec != :player_name
-          stat[selec] = data
+  indiv_stats = {}
+  game_hash.each {|place, team|
+    team[:players].each {|player_hash|
+    if player_hash[:player_name] == players_name
+      player_hash.each {|category, data|
+        if category != :player_name
+          indiv_stats[category] = data
         end 
       }
     end 
     }
   }
-  stat
+  indiv_stats
 end
 
 
