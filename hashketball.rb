@@ -150,14 +150,12 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(game_hash)
-  game_hash.collect
-    binding.pry
-end
 
-
-def player_numbers(teams_name)
-  num = []
+def team_names(game_data)
+  game_data.collect {|place, team|
+    team[:team_name]
+  }
+end[]
   game_hash.each {|spot, team_hash|
     if team_hash[:team_name] == teams_name
       team_hash[:players].each {|pd|
