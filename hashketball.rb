@@ -153,7 +153,7 @@ end
 
 def team_names(game_data)
   game_data.collect {|place, team|
-    team[:team_name]
+  teams
   }
 end
 
