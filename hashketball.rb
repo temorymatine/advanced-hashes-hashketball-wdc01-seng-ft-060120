@@ -156,6 +156,10 @@ def team_names(game_data)
     team[:team_name]
   }
 end[]
+
+
+
+
   game_hash.each {|spot, team_hash|
     if team_hash[:team_name] == teams_name
       team_hash[:players].each {|pd|
