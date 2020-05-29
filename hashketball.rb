@@ -176,9 +176,9 @@ def player_stats(players_name)
   def big_shoe_rebounds
     bf = 0 
     game_hash.each{|spot, team|
-    team[:players].each {|player_hash|
-    if player_hash[:shoe] >= bf
-      bf = player_hash[:shoe]
+    team[:players].each {|ph|
+    if ph[:shoe] >= bf
+      bf = ph[:shoe]
     end
     }}
   game_hash.each {|place, team|
