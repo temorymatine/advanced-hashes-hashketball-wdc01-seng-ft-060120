@@ -152,7 +152,7 @@ end
 
 def team_names(team_data)
   team_data.map {|spot, team|
-    team[:team_name]
+   
     binding.pry
   }
 end
