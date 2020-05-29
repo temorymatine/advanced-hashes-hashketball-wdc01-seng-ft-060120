@@ -152,7 +152,8 @@ end
 
 
 def teamd_names(g)
-  
+  g= 4
+   binding.pry
 end
 
 def player_numbers(teams_name)
