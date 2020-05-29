@@ -150,6 +150,12 @@ def team_colors(teams_name)
   }
 end
 
+def team_names(game_data)
+  game_data.collect {|spot, team|
+    team[:team_name]
+  }
+  binding.pry
+end
 
 
 def player_numbers(teams_name)
