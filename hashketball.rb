@@ -154,7 +154,7 @@ end
 def team_names(g)
   g.collect{|spot,team|
   team[:team_name]
-   binding.pry
+  }
 end
 
 def player_numbers(teams_name)
