@@ -150,8 +150,8 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(game_data)
-  game_data.collect {|spot, team|
+def team_names(teams)
+  teams.collect {|spot, team|
     team[:team_name]
   }
 end
