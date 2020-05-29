@@ -224,6 +224,15 @@ def winning_team
   end
 end
 
+def player_with_longest_name
+  allnamez = []
+  game_hash.each {|spot, team|
+    team[:players].each {|ph|
+      allnamez << ph[:player_name]
+    }
+  }
+  return names.max_by {|x| x.length}
+end
 
   
 # Write code here
