@@ -126,6 +126,23 @@ def game_hash
   }
 end
 def num_points_scored(player)
-  game_hash.each{|place
+  game_hash.each{|spot, team| 
+    team[:players].each{|player_hash|
+      if (player_hash[:player_name] == player)
+          return player_hash[:points]
+    end
+    }
+  }
+end
+def show_size(players_name)
+  game_hash.each{|spot, team
+  team[:players].each {|player_info|
+  if player_info[:player_name] ==
+    players_name
+    return player_info[:shoe]
+  end
+  }}
+end
+def
   
 # Write code here
