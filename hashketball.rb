@@ -203,6 +203,27 @@ end
 end
 
 
+def winning_team
+  home = 0
+  away = 0
+  game_hash.each {|spot, team|
+    if spot == :home
+      team[:players].each {|ph|
+        home += ph[:points]
+      }
+    elsif spot == :away
+      team[:players].each {|ph|
+        away += ph[:points]
+      }
+    end
+  }
+  if home> away
+    return game_hash[:home][:team_name]
+  elsif home < away
+    return game_hash[:away][:team_name]
+  end
+end
+
 
   
 # Write code here
