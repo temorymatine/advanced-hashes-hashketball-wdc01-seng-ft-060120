@@ -150,7 +150,7 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(team_info)
+def team_names
   team_info.collect {|spot, team|
     team[:team_name]
     binding.pry
