@@ -174,6 +174,7 @@ def player_stats(players_name)
         end 
       }
     end 
+    binding.pry
     }
   }
   indiv_stats
