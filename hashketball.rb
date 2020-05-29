@@ -164,13 +164,13 @@ def player_numbers(teams_name)
   num
 end
 def player_stats(players_name)
-  indiv_stats = {}
-  game_hash.each {|place, team|
+  stats = {}
+  game_hash.each {|spot, team|
     team[:players].each {|player_hash|
     if player_hash[:player_name] == players_name
       player_hash.each {|category, data|
         if category != :player_name
-          indiv_stats[category] = data
+          stats[category] = data
         end 
       }
     end 
@@ -178,7 +178,7 @@ def player_stats(players_name)
     }
   }
   
-  indiv_stats.merge(:player_name => players_name)
+  stats.merge(:player_name => players_name)
   
   
 end
