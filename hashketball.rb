@@ -151,8 +151,8 @@ def team_colors(teams_name)
 end
 
 
-def teamd_names(g)
-  g= 4
+def team_names(g)
+  
    binding.pry
 end
 
