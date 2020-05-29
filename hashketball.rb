@@ -150,8 +150,8 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(game_data)
-  
+def team_names(game_hash)
+  game_hash.collect
     binding.pry
 end
 
