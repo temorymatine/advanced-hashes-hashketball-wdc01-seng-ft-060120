@@ -150,12 +150,7 @@ def team_colors(teams_name)
   }
 end
 
-def team_names(team_data)
-  team_data.map {|spot, team|
-   
-    binding.pry
-  }
-end
+
 
 def player_numbers(teams_name)
   num = []
