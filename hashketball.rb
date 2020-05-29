@@ -142,6 +142,22 @@ def shoe_size(players_name)
   end
   }  }
 end
+def team_colors(teams_name)
+  game_hash.each{|spot, team|
+    if team[:team_name] == teams.name 
+      return team[:colors]
+    end
+  }
+end
+
+def team_names(game_data)
+  game_data.collect{|spot, team|
+    team[:team_name]
+  }
+end
+
+def player_numbers(teams_name)
+  
 
   
 # Write code here
