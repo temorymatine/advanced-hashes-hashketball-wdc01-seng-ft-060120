@@ -152,7 +152,7 @@ end
 
 def team_names(game_data)
   game_data.collect {|spot, team| team}
-    
+    binding.pry
 end
 
 
