@@ -151,7 +151,7 @@ def team_colors(teams_name)
 end
 
 
-def team_names(g)
+def team_names(g,d)
   g.collect{|spot,team|
   team[:team_name]
   }
