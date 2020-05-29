@@ -155,10 +155,10 @@ def team_names(game_data)
   game_data.collect {|place, team|
     team[:team_name]
   }
-end[]
+end
 
-
-
+def player_numbers(teams_name)
+num =[]
 
   game_hash.each {|spot, team_hash|
     if team_hash[:team_name] == teams_name
