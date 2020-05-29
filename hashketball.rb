@@ -177,7 +177,7 @@ def player_stats(players_name)
     
     }
   }
-  indiv_stats << players_name
+  
   indiv_stats
   binding.pry
 end
