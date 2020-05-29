@@ -179,7 +179,7 @@ end
       bf = player_hash[:shoe]
     end
     }}
-  end
+  game_hash.each{|spot,team|
   
   
 
