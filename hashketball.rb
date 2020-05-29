@@ -179,7 +179,14 @@ end
       bf = player_hash[:shoe]
     end
     }}
-  game_hash.each{|spot,team|
+  game_hash.each {|place, team|
+    team[:players].each {|ph|
+    if ph[:shoe] == bf
+      return ph[:rebounds]
+    end
+    }
+  }
+end
   
   
 
