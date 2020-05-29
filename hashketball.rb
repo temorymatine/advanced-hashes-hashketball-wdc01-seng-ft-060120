@@ -159,10 +159,10 @@ end
 def player_numbers(teams_name)
   numbers = []
   game_hash.each{|spot, team|
-  team[:players].each {|player_hash| 
-  if player_hash[:player_name] == players_name
-    player_hash.each {|selec, data|
-      if category != :player_name
+  team[:players].each {|ph| 
+  if ph[:player_name] == players_name
+    ph.each {|selec, data|
+      if selec != :player_name
         indiv_stats[selec] = data
       end
     }
@@ -188,17 +188,4 @@ end
   }
 end
   
-  def most_points_scored
-  point = 0
-  player = ""
-  game_hash.each {|spot, team|
-    team[:players].each {|ph|
-    if ph[:points] >= point
-      point = ph[:points]
-      player = ph[:player_name]
-    end 
-    }
-  }
-  player
-end
-
+ 
