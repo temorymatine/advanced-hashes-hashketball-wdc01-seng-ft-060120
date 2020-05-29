@@ -156,7 +156,19 @@ def team_names(game_data)
   }
 end
 
+def player_numbers(teams_name)
+  num = []
+  game_hash.each {|spot, team_hash|
+    if team_hash[:team_name] == teams_name
+      team_hash[:players].each {|pd|
+        num << pd[:number]
+      }
+    end
+  }
+  num
+end
 
+def player_stats(players_name)
 
 
 
