@@ -134,7 +134,7 @@ def num_points_scored(player)
     }
   }
 end
-def show_size(players_name)
+def shoe_size(players_name)
   game_hash.each{|spot, team
   team[:players].each {|player_info|
   if player_info[:player_name] ==  players_name
