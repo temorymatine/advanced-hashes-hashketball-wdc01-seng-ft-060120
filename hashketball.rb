@@ -188,7 +188,31 @@ end
   }
 end
   
-  
+  def most_points_scored
+  point = 0
+  player = ""
+  game_hash.each {|spot, team|
+    team[:players].each {|ph|
+    if ph[:points] >= point
+      point = ph[:points]
+      player = ph[:player_name]
+    end 
+    }
+  }
+  player
+enddef most_points_scored
+  point = 0
+  player = ""
+  game_hash.each {|spot, team|
+    team[:players].each {|ph|
+    if ph[:points] >= point
+      point = ph[:points]
+      player = ph[:player_name]
+    end 
+    }
+  }
+  player
+end
 
   
 # Write code here
