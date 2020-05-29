@@ -167,7 +167,6 @@ def player_numbers(teams_name)
   }
   num
 end
-
 def player_stats(players_name)
   stat = {}
   game_hash.each {|spot, team|
