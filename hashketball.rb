@@ -137,13 +137,10 @@ end
 def show_size(players_name)
   game_hash.each{|spot, team
   team[:players].each {|player_info|
-  if player_info[:player_name] ==
-    players_name
+  if player_info[:player_name] ==  players_name
     return player_info[:shoe]
   end
-  }
-    
-  }
+  }  }
 end
 
   
