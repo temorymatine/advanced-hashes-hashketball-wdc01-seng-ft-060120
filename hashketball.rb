@@ -152,6 +152,7 @@ end
 
 
 def team_names(g)
+  g.collect{|spot,team|
   
    binding.pry
 end
