@@ -156,21 +156,11 @@ def team_names(game_data)
   }
 end
 
-def player_numbers(teams_name)
-  numbers = []
-  game_hash.each{|spot, team|
-  team[:players].each {|ph| 
-  if ph[:player_name] == players_name
-    ph.each {|selec, data|
-      if selec != :player_name
-        indiv_stats[selec] = data
-      end
-    }
-  end
-  }
-  }
-  indiv_stats
-end
+
+
+
+
+
   def big_shoe_rebounds
     bf = 0 
     game_hash.each{|spot, team|
