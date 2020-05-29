@@ -151,10 +151,8 @@ def team_colors(teams_name)
 end
 
 
-def team_names(game_data)
-  game_data.collect {|place, team|
-  teams
-  }
+def team_names(g)
+  
 end
 
 def player_numbers(teams_name)
